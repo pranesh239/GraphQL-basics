@@ -1,0 +1,56 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "type": "book",
+      "pages": 250,
+      "title": "Intro to React",
+      "author": 1
+    },
+    {
+      "id": 2,
+      "type": "online",
+      "duration": 21,
+      "durationIn": "hours",
+      "title": "Intro to GraphQL",
+      "author": 2
+    },
+    {
+      "id": 3,
+      "type": "online",
+      "duration": 9,
+      "durationIn": "hours",
+      "title": "OOPS in Javascript",
+      "author": 3
+    },
+    {
+      "id": 4,
+      "type": "online",
+      "duration": 4,
+      "durationIn": "hours",
+      "title": "Redis for Frontend'ers",
+      "author": 3
+    },
+    {
+      "id": 5,
+      "type": "book",
+      "pages": 670,
+      "title": "Docker Basics",
+      "author": 5
+    },
+    {
+      "id": 6,
+      "type": "book",
+      "pages": 430,
+      "title": "Flutter - Novice to Master",
+      "author": 4
+    }
+  ],
+  "authors": [
+    { "id": 1, "name": "John Doe", "course": [1] },
+    { "id": 2, "name": "Jane Doe", "course": [2] },
+    { "id": 3, "name": "Stephen Rod", "course": [3, 4] },
+    { "id": 4, "name": "Mark Stony", "course": [6] },
+    { "id": 5, "name": "Kane Brot", "course": [5] }
+  ]
+}

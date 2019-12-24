@@ -1,0 +1,29 @@
+{
+  "name": "graphql-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dist": "babel src -d dist",
+    "restart": "rimraf dist && yarn dist && yarn start",
+    "dev": "nodemon --exec yarn restart",
+    "start": "node dist/server.js",
+    "start-dev": "babel-node src/server.js",
+    "json:server": "json-server db.json"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.14",
+    "graphql": "^14.5.8",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "eslint": "^6.8.0",
+    "json-server": "^0.15.1",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.0"
+  }
+}

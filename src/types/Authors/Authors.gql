@@ -1,0 +1,10 @@
+type Author {
+  id: ID!
+  name: String!
+  course: [Course]
+}
+
+extend type Query {
+  authors: [Author]
+  author(id: ID!): Author
+}

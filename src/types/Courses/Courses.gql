@@ -1,0 +1,33 @@
+enum DurationUnits {
+  hours
+  minutes
+}
+
+interface Course {
+  id: ID!
+  title: String!
+  author: Author!
+  type: String!
+}
+
+type OnlineCourse implements Course {
+  id: ID!
+  title: String!
+  author: Author!
+  duration: Int
+  type: String!
+  durationIn: DurationUnits
+}
+
+type BookCourse implements Course {
+  id: ID!
+  title: String!
+  author: Author!
+  type: String!
+  pages: Int
+}
+
+extend type Query {
+  courses: [Course]
+  course(id: ID!): Course!
+}
